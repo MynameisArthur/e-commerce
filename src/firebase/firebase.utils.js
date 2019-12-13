@@ -13,6 +13,8 @@ const config = {
   measurementId: "G-LBQCVPE8J0"
 };
 
+
+// asynchroniczna funkcja pobierająca obiekt auth i tworząca z niego nowy rekord w bazie w kolekcji "users"
 export const createUserProfileDocument = async (userAuth,additionalData)=>{
   if(!userAuth)
   {
