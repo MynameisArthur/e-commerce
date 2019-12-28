@@ -52,7 +52,7 @@ export const addCollectionAndDocuments = async (collectionKey,objectsToAdd)=>{
    */
   const batch = firestore.batch();
   objectsToAdd.forEach(obj=>{
-    const newDocRef = collectionRef.doc();//pobierz dokument na pustym stringu, firbase da mi nowy ref dokumentu i stworzy losowy numer ID
+    const newDocRef = collectionRef.doc();//pobierz dokument na pustym stringu, firebase da mi nowy ref dokumentu i stworzy losowy numer ID
    batch.set(newDocRef,obj);
   });
   return await batch.commit();
