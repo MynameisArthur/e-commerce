@@ -7,7 +7,6 @@ import App from './App';
 import {PersistGate} from 'redux-persist/integration/react';
 import {store,persistor} from './redux/store';
 
-
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
@@ -17,6 +16,7 @@ ReactDOM.render(
         </BrowserRouter>
     </Provider>
 , document.getElementById('root'));
+
 
 
 
