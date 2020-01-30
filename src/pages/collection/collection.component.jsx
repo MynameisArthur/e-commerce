@@ -7,8 +7,9 @@ import {
   CollectionTitle,
   CollectionItemsContainer
 } from './collection.styles';
+import { firestore } from '../../firebase/firebase.utils';
 
-const CollectionPage = ({ collection }) => {
+const CollectionPage = ({ collection }) => {  
   const { title, items } = collection;
   return (
     <CollectionPageContainer>
